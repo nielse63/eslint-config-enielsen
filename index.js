@@ -1,7 +1,4 @@
-const fn = require('./src');
-
-module.exports = fn;
-
-if (!module.parents) {
-  fn();
-}
+module.exports = {
+  plugins: ['jest'],
+  extends: ['airbnb-base', 'prettier', 'plugin:jest/recommended'],
+};
